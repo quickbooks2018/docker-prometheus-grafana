@@ -18,14 +18,13 @@ scrape_configs:
 
 - docker-compose.yml
 ```yml
-version: '3.7'
-
+---
 services:
   prometheus:
     image: prom/prometheus:latest
     container_name: prometheus
     volumes:
-      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - .${PWD}/prometheus.yml:/etc/prometheus/prometheus.yml
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
       - '--storage.tsdb.path=/prometheus'
