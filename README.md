@@ -70,7 +70,7 @@ volumes:
 
 - docker compose command
 ```bash
-docker compose -p up -d
+docker compose -p prometheus up -d
 ```
 
 - Play with Docker
