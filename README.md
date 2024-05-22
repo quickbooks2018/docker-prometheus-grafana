@@ -78,6 +78,21 @@ ssh-keygen -t ed25519 -f cloudgeeks -C "default"
 ssh -i ~/.ssh/cloudgeeks  root@ip172-18-0-31-cnn5hu291nsg00dv9vk0@direct.labs.play-with-docker.com
 ```
 
+- Docker Container Metrics
+- vim /etc/docker/daemon.json
+```json
+{
+  "metrics-addr" : "127.0.0.1:9323",
+    "experimental" : true
+}
+```
+```bash
+systemctl daemon-reload
+systemctl restart docker
+
+curl http://localhost:9323/metrics
+```
+
 - Prometheus Grafana Dashboards
 
 - https://grafana.com/grafana/dashboards/3662-prometheus-2-0-overview/
