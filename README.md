@@ -72,3 +72,9 @@ volumes:
 ```bash
 docker compose -p up -d
 ```
+
+- Play with Docker
+```bash
+ssh-keygen -t ed25519 -f cloudgeeks -C "default"
+ssh -i ~/.ssh/cloudgeeks  root@ip172-18-0-31-cnn5hu291nsg00dv9vk0@direct.labs.play-with-docker.com
+```
