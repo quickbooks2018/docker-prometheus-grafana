@@ -90,6 +90,12 @@ ssh -i ~/.ssh/cloudgeeks  root@ip172-18-0-31-cnn5hu291nsg00dv9vk0@direct.labs.pl
 systemctl daemon-reload
 systemctl restart docker
 
+# kill
+kill $(pidof dockerd)
+
+# start
+dockerd &>/docker.log &
+
 curl http://localhost:9323/metrics
 ```
 
