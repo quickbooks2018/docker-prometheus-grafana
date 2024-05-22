@@ -83,5 +83,3 @@ ssh -i ~/.ssh/cloudgeeks  root@ip172-18-0-31-cnn5hu291nsg00dv9vk0@direct.labs.pl
 - https://grafana.com/grafana/dashboards/3662-prometheus-2-0-overview/
 
 - https://grafana.com/grafana/dashboards/3681-prometheus2-0/
-
--
