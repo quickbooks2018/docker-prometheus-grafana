@@ -77,3 +77,11 @@ docker compose -p prometheus up -d
 ssh-keygen -t ed25519 -f cloudgeeks -C "default"
 ssh -i ~/.ssh/cloudgeeks  root@ip172-18-0-31-cnn5hu291nsg00dv9vk0@direct.labs.play-with-docker.com
 ```
+
+- Prometheus Grafana Dashboards
+
+- https://grafana.com/grafana/dashboards/3662-prometheus-2-0-overview/
+
+- https://grafana.com/grafana/dashboards/3681-prometheus2-0/
+
+-
